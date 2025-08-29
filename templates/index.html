@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Transcription Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-comments"></i> Speech Transcription Chatbot</h1>
+            <p>Real-time communication tool for hearing impaired students and teachers</p>
+        </header>
+
+        <div class="role-selection">
+            <div class="role-card">
+                <div class="role-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h2>Teacher</h2>
+                <p>Start speaking and your voice will be transcribed in real-time for students to read</p>
+                <a href="/teacher" class="btn btn-primary">Join as Teacher</a>
+            </div>
+
+            <div class="role-card">
+                <div class="role-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h2>Student</h2>
+                <p>See real-time transcriptions and communicate through text or speech</p>
+                <a href="/student" class="btn btn-secondary">Join as Student</a>
+            </div>
+        </div>
+
+        <div class="features">
+            <h3>Features</h3>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-microphone"></i>
+                    <span>Real-time Speech to Text</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-eye"></i>
+                    <span>Visual Feedback</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-font"></i>
+                    <span>Adjustable Text Size</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-history"></i>
+                    <span>Conversation History</span>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Designed for accessible communication in educational environments</p>
+        </footer>
+    </div>
+</body>
+</html>
